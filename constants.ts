@@ -1,0 +1,192 @@
+import { Service, ShortVideo, Tutorial, Post } from './types';
+
+export const SERVICES: Service[] = [
+  {
+    id: '1',
+    title: 'Professional MC Services',
+    description: 'Hype up your weddings, parties, and corporate events with our top-tier MCs.',
+    image: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=800',
+    price: 'Starting at $500',
+    category: 'mc',
+  },
+  {
+    id: '2',
+    title: 'Private Dance Classes',
+    description: 'One-on-one sessions to perfect your moves. Hip-hop, Salsa, Contemporary, and more.',
+    image: 'https://images.unsplash.com/photo-1504609773096-104ff2c73ba4?auto=format&fit=crop&w=800',
+    price: '$60/hour',
+    category: 'dance',
+  },
+  {
+    id: '3',
+    title: 'Kids Dance Training',
+    description: 'Fun and energetic classes designed specifically for children aged 4-12.',
+    image: 'https://images.unsplash.com/photo-1518837696845-a6f570fad1e2?auto=format&fit=crop&w=800',
+    price: '$120/month',
+    category: 'kids',
+  },
+  {
+    id: '4',
+    title: 'Full Event Management',
+    description: 'We handle everything from venue booking to entertainment and catering.',
+    image: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=800',
+    price: 'Custom Quote',
+    category: 'event',
+  },
+];
+
+export const SHORTS_DATA: ShortVideo[] = [
+  {
+    id: 's1',
+    username: '@dancequeen_jay',
+    description: 'Learning the new shuffle! 💃🔥 #dance #shuffle',
+    songName: 'Electric Slide - Remix',
+    likes: 12400,
+    comments: 342,
+    shares: 105,
+    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
+    avatarUrl: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150',
+  },
+  {
+    id: 's2',
+    username: '@mc_mike_hype',
+    description: 'Crowd going wild last night! 🎤🙌 #eventlife',
+    songName: 'Party Rock Anthem',
+    likes: 8900,
+    comments: 120,
+    shares: 55,
+    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4',
+    avatarUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150',
+  },
+  {
+    id: 's3',
+    username: '@kidz_groove',
+    description: 'Look at these little rockstars go! ⭐',
+    songName: 'Happy - Pharrell',
+    likes: 25000,
+    comments: 800,
+    shares: 2000,
+    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4',
+    avatarUrl: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=150',
+  },
+  {
+    id: 's4',
+    username: '@street_vibes',
+    description: 'Midnight freestyle session in the studio.',
+    songName: 'Lo-fi Beats',
+    likes: 5400,
+    comments: 45,
+    shares: 12,
+    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4',
+    avatarUrl: 'https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&w=150',
+  },
+  {
+    id: 's5',
+    username: '@ballet_anna',
+    description: 'Pirouettes on point today 🩰',
+    songName: 'Swan Lake',
+    likes: 3200,
+    comments: 88,
+    shares: 40,
+    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4',
+    avatarUrl: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150',
+  },
+];
+
+export const TUTORIALS: Tutorial[] = [
+  {
+    id: 't1',
+    title: 'Moonwalk for Beginners',
+    instructor: 'Michael J.',
+    duration: '10:15',
+    level: 'Beginner',
+    thumbnail: 'https://images.unsplash.com/photo-1535525153412-5a42439a210d?auto=format&fit=crop&w=800',
+    views: '1.2M',
+  },
+  {
+    id: 't2',
+    title: 'Advanced Salsa Spins',
+    instructor: 'Maria R.',
+    duration: '25:00',
+    level: 'Advanced',
+    thumbnail: 'https://images.unsplash.com/photo-1508700929628-666bc8bd84ea?auto=format&fit=crop&w=800',
+    views: '85k',
+  },
+  {
+    id: 't3',
+    title: 'Hip Hop Isolations',
+    instructor: 'Turbo',
+    duration: '15:30',
+    level: 'Intermediate',
+    thumbnail: 'https://images.unsplash.com/photo-1524594152303-9fd13543fe6e?auto=format&fit=crop&w=800',
+    views: '230k',
+  },
+  {
+    id: 't4',
+    title: 'Breakdance: The Windmill',
+    instructor: 'B-Boy Snake',
+    duration: '30:45',
+    level: 'Advanced',
+    thumbnail: 'https://images.unsplash.com/photo-1551972873-b7e8754e8e26?auto=format&fit=crop&w=800',
+    views: '500k',
+  },
+];
+
+export const FEED_POSTS: Post[] = [
+  {
+    id: 'p1',
+    author: { name: 'Sarah Dance', avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150', isVerified: true },
+    time: '2h',
+    content: 'Just finished teaching the kids class! The energy was absolutely insane today. So proud of my little students. 🌟💃 #DanceLife #ProudTeacher',
+    image: 'https://images.unsplash.com/photo-1566737236500-c8ac43014a67?auto=format&fit=crop&w=800',
+    likes: 245,
+    comments: 34,
+    shares: 12,
+    type: 'regular'
+  },
+  {
+    id: 'p2',
+    author: { name: 'FunTimes Events', avatar: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=150', isVerified: true },
+    time: '4h',
+    content: 'Planning a wedding? 💍 Our MCs know exactly how to get the crowd moving. Book now and get 10% off for Summer events!',
+    image: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=800',
+    likes: 56,
+    comments: 8,
+    shares: 2,
+    type: 'service',
+    serviceId: '1'
+  },
+  {
+    id: 'p3',
+    author: { name: 'Meme Lord', avatar: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150' },
+    time: '5h',
+    content: 'When the DJ plays your jam but you just ate a full 3-course meal:',
+    image: 'https://images.unsplash.com/photo-1571266028243-e4733b090bb1?auto=format&fit=crop&w=800',
+    likes: 1200,
+    comments: 405,
+    shares: 890,
+    type: 'meme'
+  },
+  {
+    id: 'p4',
+    author: { name: 'Jason Derulo Fan', avatar: 'https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&w=150' },
+    time: '6h',
+    content: 'Check out this new tutorial I found on FunTimes Watch! The footwork is crazy.',
+    video: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4',
+    likes: 89,
+    comments: 12,
+    shares: 5,
+    type: 'video'
+  },
+  {
+    id: 'p5',
+    author: { name: 'Classic Memes', avatar: 'https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&w=150' },
+    time: '12h',
+    content: 'Nobody:\nMe at 3am practicing choreography in front of the mirror:',
+    image: 'https://images.unsplash.com/photo-1508700929628-666bc8bd84ea?auto=format&fit=crop&w=800',
+    likes: 3500,
+    comments: 200,
+    shares: 1500,
+    type: 'meme'
+  }
+];

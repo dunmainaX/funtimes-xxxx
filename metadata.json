@@ -1,0 +1,7 @@
+{
+  "name": "FunTimes Entertainment",
+  "description": "The ultimate entertainment hub for dance, events, and community. Book MCs, learn dance, watch shorts, and chat with our AI community manager.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
